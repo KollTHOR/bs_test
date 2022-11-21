@@ -1,0 +1,16 @@
+<h1>Persons</h1>
+  <div>
+    <ul class="persons">
+      <li *ngFor="let person of Person">
+        <p>
+          {{person.lastName}}
+          {{person.fisrtName}},
+          születési éve: {{getAge(Person.indexOf(person))}} éves,
+          {{isAgePrime(getAge(Person.indexOf(person))) === true ? 'prímszám' : 'nem prímszám'}}
+        </p>
+      </li>
+    </ul>
+    <button routerLink="">Back to input</button>
+  </div>
+
+

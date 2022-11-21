@@ -1,0 +1,40 @@
+.calcWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.maindisplay {
+  background: lightgrey;
+  height: calc(100% / 3);
+  padding: 5% !important;
+  font-size: 4rem;
+  text-align: right;
+  font-family: Courier, monospace;
+  overflow: auto;
+  min-width: 15rem;
+}
+.subdisplay {
+  border-bottom: 1px solid black;
+  height: 25%;
+  font-size: 2rem;
+  overflow: auto;
+}
+.keypad {
+  height: calc(100% / 3);
+}
+.keys {
+  margin: 0;
+  width: 15%;
+  height: 10%;
+  background: whitesmoke;
+  color: black;
+  padding: 5%;
+  font-size: 3rem;
+  text-align: center;
+  cursor: pointer;
+}
+.one-line {
+  display: inline-block;
+}

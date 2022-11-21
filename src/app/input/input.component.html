@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BS TEST</title>
+</head>
+<body>
+  <div>
+    <p>Text:</p>
+    <input type="text" #input1 (keyup)="getValue(input1.value)">
+    <h3> Text you wrote: {{sameAsInput}}
+    </h3>
+  </div>
+  <div>
+    <p>Color changing text: </p>
+    <input type="text" #input2 (keyup)="getColor(input2.value)" [style.backgroundColor]="inputColor">
+  </div>
+  <button routerLink="person">Person Page</button>
+  <button routerLink="numbers">Numbers Page</button>
+  <button routerLink="calc">Calculator</button>
+</body>
+</html>

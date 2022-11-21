@@ -20,6 +20,9 @@ getConvertedNumbersAsString(numAsString: string): void {
 
 convertInput(numAsString: string): string {
   const num = Number(numAsString)
+  if (isNaN(num)) {
+    return "Please enter a number"
+  }
   if (num < 0) {
     return "mínusz " + this.convertMilliards(num*-1);
   }
